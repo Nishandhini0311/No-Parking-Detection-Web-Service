@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>No Parking Detection</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+
+        .box {
+            background: white;
+            color: black;
+            width: 400px;
+            margin: auto;
+            margin-top: 120px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            background: #2a5298;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1e3c72;
+        }
+
+        a {
+            display: block;
+            margin-top: 15px;
+            color: #2a5298;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>🚗 No Parking Detection</h2>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="video" required>
+        <button type="submit">Upload & Process</button>
+    </form>
+
+    <a href="/dashboard">📊 View Dashboard</a>
+</div>
+
+</body>
+</html>
